@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+name: newapp
+labels:
+  name: newapp
+spec:
+containers:
+- name: newapp
+  image: 200263830/dockepro:latest
+  env:
+  - name: INTERVAL
+    value: 10
+  ports:
+    - containerPort: 8080
