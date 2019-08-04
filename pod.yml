@@ -10,6 +10,6 @@ containers:
   image: 200263830/dockepro:latest
   env:
   - name: INTERVAL
-    value: 10
+    value: "10"
   ports:
     - containerPort: 8080
